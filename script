@@ -53,7 +53,7 @@ Hack:NewButton("Бесконечные патроны для ПМ", "Патро�
     end
 end)
 local Creator = Window:NewTab("Создатели")
-local Creators = Teleport:NewSection("Создатели")
+local Creators = Creator:NewSection("Создатели")
 Creators:NewButton("Oleg Mongol", "Идея Гуи", function()
     Print("Oleg Mongol")
 end)
