@@ -1,0 +1,139 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/OlegMongolRoblox/Hacks/refs/heads/main/1"))()
+local plr = game.Players.LocalPlayer
+local Window = Library.CreateLib("Prov Hub By Oleg Mongol and Blockrazz v.0.0.3","RJTheme5")
+local Teleport = Window:NewTab("Телепорты")
+local Tp = Teleport:NewSection("Телепорты")
+Tp:NewButton("Больница", "Телепортирует в больницу", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-3394.24463, 5.05000019, 263.195526, -0.173624277, 0, 0.984811902, 0, 1, 0, -0.984811902, 0, -0.173624277)
+end)
+Tp:NewButton("Церковь", "Телепортирует в церковь", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-2659.02637, 2.55033565, -739.766541, 0.984812498, 0, 0.173621148, 0, 1, 0, -0.173621148, 0, 0.984812498)
+end)
+Tp:NewButton("Мвд", "Телепортирует в Мвд", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-2852.2749, 18.6000004, 1110.59045, 0.173624337, 0, 0.984811902, 0, 1, 0, -0.984811902, 0, 0.173624337)
+end)
+Tp:NewButton("Мчс", "Телепортирует в Мчс", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-1886.40942, 2.70004678, 297.478699, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+Tp:NewButton("Гаражи", "Телепортирует в Гаражи", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-3253.19141, 7.5912075, -544.405945, 0.438328028, 0.898815036, -4.10974026e-05, 4.10974026e-05, -6.58035278e-05, -1, -0.898815036, 0.438328028, -6.58035278e-05)
+end)
+Tp:NewButton("Разветка Украины", "Пасхалка", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-2057.31274, -17.4150505, -272.960266, -0.573599219, 0, 0.81913656, 0, 1, 0, -0.81913656, 0, -0.573599219)
+end)
+Tp:NewButton("Деревня", "Телепортирует в Деревню", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-2791.89429, 2.27600002, 2833.02954, -0.933587909, 0, -0.358349502, 0, 1, 0, 0.358349502, 0, -0.933587909)
+end)
+Tp:NewButton("Пятёрочка (Фейрверки)", "Телепортирует в Пятёрочку", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-2406.3667, 7.48527145, 39.0829697, 0.173615217, 0.984813571, -5.48362732e-06, -5.48362732e-06, 6.55651093e-06, 1, 0.984813571, -0.173615217, 6.55651093e-06)
+end)
+Tp:NewButton("Авто вокзал", "Телепортирует на авто вокзал", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-2306.71484, 3.87504721, -2513.34033, -0.965929747, 0, -0.258804798, 0, 1, 0, 0.258804798, 0, -0.965929747)
+end)
+Tp:NewButton("Краны", "Телепортирует к кранам", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-1882.00708, 3.11711454, -740.757935, 0.999996185, 0, 0.00276230182, 0, 1, 0, -0.00276230182, 0, 0.999996185)
+end)
+Tp:NewButton("На кран", "Телепортирует на кран", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-1966.4519, 110.70993, -745.091003, -0.173624277, 0, 0.984811902, 0, 1, 0, -0.984811902, 0, -0.173624277)
+end)
+Tp:NewButton("Выборы", "Телепортирует на Выборы", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-2382.19336, 83.4841003, 551.676147, 0.996594906, -0, -0.0824535638, 0, 1, -0, 0.0824535638, 0, 0.996594906)
+end)
+Tp:NewButton("Недострой", "Телепортирует на Недострой", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-2347.92944, 94.7500229, -710.446533, 0.499959469, 0, 0.866048813, 0, 1, 0, -0.866048813, 0, 0.499959469)
+end)
+local Hacks = Window:NewTab("Взломы")
+local Hack = Hacks:NewSection("Взлом")
+Hack:NewButton("Дюп фейрверков (смотреть описание)", "Бери Фейрверки может ломаться (перезапустить хак)", function()
+    for i,v in pairs(game.Workspace.FireworkGiver:GetDescendants()) do
+        if v.Name == "ProximityPrompt" then
+            v.Enabled = true
+            v.HoldDuration = 0
+        end
+    end
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-2406.3667, 7.48527145, 39.0829697, 0.173615217, 0.984813571, -5.48362732e-06, -5.48362732e-06, 6.55651093e-06, 1, 0.984813571, -0.173615217, 6.55651093e-06)
+end)
+Hack:NewButton("Выдача ПМ FE!", "Если не работает зайдите на другой сервер", function()
+    for i,v in pairs(game.Players:GetDescendants()) do
+        if v.Name == "ПМ" then
+            v.Parent = game.Players.LocalPlayer.Backpack
+        end
+    end
+    while wait(0.5) do
+    local humanoid = plr.Character and plr.Character:FindFirstChild("Humanoid")
+    if humanoid and humanoid.Health <= 1 then
+        for i,v in pairs(game.Players:GetDescendants()) do
+        if v.Name == "ПМ" then
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            wait(15)
+            v.Parent = game.Players.LocalPlayer.Backpack
+        end
+    end
+    end
+end
+end)
+Hack:NewButton("Бесконечные патроны для ПМ", "Патроны", function()
+    for i,v in pairs(game.Players:GetDescendants()) do
+        if v.Name == "ПМ" then
+            v.RepValues.Mag.Value = 10000000
+        end
+    end
+end)
+Hack:NewButton("Выдача ЩИТ FE!", "Если не работает зайдите на другой сервер", function()
+    for i,v in pairs(game.Players:GetDescendants()) do
+        if v.Name == "Щит" then
+            v.Parent = game.Players.LocalPlayer.Backpack
+        end
+    end
+    while wait(0.5) do
+    local humanoid = plr.Character and plr.Character:FindFirstChild("Humanoid")
+    if humanoid and humanoid.Health <= 1 then
+        for i,v in pairs(game.Players:GetDescendants()) do
+        if v.Name == "ПМ" then
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            wait(15)
+            v.Parent = game.Players.LocalPlayer.Backpack
+        end
+    end
+    end
+end
+end)
+Hack:NewButton("Выдача секретного ключа(работает не всегда)", "работает не всегда открывает люки", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-3569.15649, 7.18634033, 343.490723, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    wait(3)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-2374.53394, 2.56948352, -941.577026, 0.999996722, -0.00173274113, 0.00189333502, 0.00172011822, 0.999976397, 0.00664839381, -0.00190481031, -0.00664511556, 0.999976099)
+    wait(3)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-3703.39429, 8.38206482, 2969.54565, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    wait(2)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-2645.479, 7.42033577, -645.475952, 0.984812498, 0, 0.173621148, 0, 1, 0, -0.173621148, 0, 0.984812498)
+end)
+local Creator = Window:NewTab("Создатели")
+local Creators = Creator:NewSection("Создатели")
+Creators:NewButton("Oleg Mongol", "Идея Гуи", function()
+    print("Oleg Mongol")
+end)
+Creators:NewButton("Blockrazz", "Скриптинг", function()
+    print("Blockrazz")
+end)
