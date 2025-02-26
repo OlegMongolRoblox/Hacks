@@ -1,6 +1,6 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/OlegMongolRoblox/Hacks/refs/heads/main/1"))()
 local plr = game.Players.LocalPlayer
-local Window = Library.CreateLib("Prov Hub By Oleg Mongol and Blockrazz v.0.0.2","RJTheme5")
+local Window = Library.CreateLib("Prov Hub By Oleg Mongol and Blockrazz v.0.0.3","RJTheme5")
 local Teleport = Window:NewTab("Телепорты")
 local Tp = Teleport:NewSection("Телепорты")
 Tp:NewButton("Больница", "Телепортирует в больницу", function()
@@ -89,6 +89,45 @@ Hack:NewButton("Бесконечные патроны для ПМ", "Патро�
             v.RepValues.Mag.Value = 10000000
         end
     end
+end)
+Hack:NewButton("Выдача ЩИТ FE!", "Если не работает зайдите на другой сервер", function()
+    for i,v in pairs(game.Players:GetDescendants()) do
+        if v.Name == "Щит" then
+            v.Parent = game.Players.LocalPlayer.Backpack
+        end
+    end
+    while wait(0.5) do
+    local humanoid = plr.Character and plr.Character:FindFirstChild("Humanoid")
+    if humanoid and humanoid.Health <= 1 then
+        for i,v in pairs(game.Players:GetDescendants()) do
+        if v.Name == "ПМ" then
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            wait(15)
+            v.Parent = game.Players.LocalPlayer.Backpack
+        end
+    end
+    end
+end
+end)
+Hack:NewButton("Выдача секретного ключа(работает не всегда)", "работает не всегда открывает люки", function()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-3569.15649, 7.18634033, 343.490723, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    wait(3)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-2374.53394, 2.56948352, -941.577026, 0.999996722, -0.00173274113, 0.00189333502, 0.00172011822, 0.999976397, 0.00664839381, -0.00190481031, -0.00664511556, 0.999976099)
+    wait(3)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-3703.39429, 8.38206482, 2969.54565, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    wait(2)
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new (-2645.479, 7.42033577, -645.475952, 0.984812498, 0, 0.173621148, 0, 1, 0, -0.173621148, 0, 0.984812498)
 end)
 local Creator = Window:NewTab("Создатели")
 local Creators = Creator:NewSection("Создатели")
