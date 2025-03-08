@@ -1,0 +1,28 @@
+for i,v in pairs(game.Players:GetDescendants()) do
+        if v.Name == "ПМ" then
+            v.Parent = game.Players.LocalPlayer.Backpack
+        end
+    end
+    while wait(0.5) do
+    local humanoid = plr.Character and plr.Character:FindFirstChild("Humanoid")
+    if humanoid and humanoid.Health <= 1 then
+        for i,v in pairs(game.Players:GetDescendants()) do
+        if v.Name == "ПМ" then
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            v.Parent = game.Players.LocalPlayer.data
+            wait(15)
+            v.Parent = game.Players.LocalPlayer.Backpack
+        end
+    end
+    end
+end
